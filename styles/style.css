@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*menu y navegador*/
+nav{
+    width: 100%;
+    height: 75px;
+    background: #edc918;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*primera pagian*/
+.pagina1_imagen{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    padding: 3 20px;
+    margin: 0 auto;
+}
+.pagina1_imagen img{
+    max-width: 50%;
+}
+.texto1 h1{
+    font-size: 80px;
+    width: 100%;
+}
+.texto1 p{
+    font-size: 21px;
+    width: 100%;
+    line-break: loose;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.boton1 button{
+    background-color:#edc918 ;
+    border:none;
+    padding: 10px 20px;
+    width: fit-content;
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*segunda pagina*/
+.pagina2_imagens{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color:rgb(226, 227, 227);
+}
+.pagina2_imagens .imagenes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    padding:  20px;
+    margin: 0 auto;
+}
+.texto2 h2{
+    color: #edc918;
+    font-size: 50px;
+    width: 55%;
+}
+.texto2 p{
+    font-size: 20px;
+    width: 50%;
+    line-break: loose;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+a{
+    font-weight: bold;
+}
+/*tercera pagina*/
+.pagina3_imagen{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color:#edc918;
+}
+.pagina3_imagen .img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    padding:  20px;
+    margin: 0 auto;
+}
+.pagina3_imagen img{
+    max-width: 50%;
+}
