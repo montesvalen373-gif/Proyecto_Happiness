@@ -1,111 +1,556 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-/*menu y navegador*/
-nav{
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Menú y navegador */
+nav {
     width: 100%;
     height: 75px;
     background: #edc918;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
+
+nav img {
+    height: 50px;
+    object-fit: contain;
+}
+
 a {
-    color:black;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
 }
-.menu ul{
+
+.menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    text-decoration: none;
     font-weight: bold;
 }
-/*primera pagian*/
-.pagina1_imagen{
+
+/* Primera página */
+.pagina1_imagen {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex: 1;
-    padding: 3 20px;
-    margin: 0 auto;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #ffffff;
 }
-.pagina1_imagen img{
+
+.pagina1_imagen img {
+    max-width: 45%;
+    height: auto;
+}
+
+.texto1 {
     max-width: 50%;
 }
-.texto1 h1{
-    font-size: 80px;
-    width: 100%;
+
+.texto1 h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
-.texto1 p{
-    font-size: 21px;
-    width: 100%;
-    line-break: loose;
-    line-height: 25px;
+
+.texto1 p {
+    font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 25px;
+    color: #333;
 }
-.boton1 button{
-    background-color:#edc918 ;
-    border:none;
-    padding: 10px 20px;
-    width: fit-content;
-    display: flex;
+
+.boton1 button {
+    background-color: #edc918;
+    border: none;
+    padding: 12px 25px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
-/*segunda pagina*/
-.pagina2_imagens{
+
+/* Segunda página */
+.pagina2_imagens {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex: 1;
-    padding: 10px 20px;
-    margin: 0 auto;
-    background-color:rgb(226, 227, 227);
+    justify-content: space-around;
+    gap: 30px;
+    background-color: rgb(226, 227, 227);
+    margin: 40px auto;
+    max-width: 1150px;
+    padding: 50px 40px;
 }
-.pagina2_imagens .imagenes{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex: 1;
-    padding:  20px;
-    margin: 0 auto;
+
+.texto2 {
+    max-width: 42%;
 }
-.texto2 h2{
+
+.texto2 h2 {
     color: #edc918;
-    font-size: 50px;
-    width: 55%;
+    font-size: 42px;
+    line-height: 1.1;
+    width: 100%;
+    margin-bottom: 20px;
 }
-.texto2 p{
-    font-size: 20px;
-    width: 50%;
-    line-break: loose;
-    line-height: 25px;
-    margin-bottom: 25px;
+
+.texto2 p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
 }
-a{
+
+.pagina2_imagens .imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.pagina2_imagens .imagenes img {
+    max-width: 48%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tercera página */
+.pagina3_imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #edc918;
+}
+
+.texto3 {
+    max-width: 50%;
+}
+
+.texto3 .titulo h2 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #000000;
     font-weight: bold;
 }
-/*tercera pagina*/
-.pagina3_imagen{
+
+.texto3 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.pagina3_imagen img {
+    max-width: 45%;
+    height: auto;
+    object-fit: contain;
+}
+
+.boton2 button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Cuarta página */
+.pagina4_imagen {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex: 1;
-    padding: 10px 20px;
-    margin: 0 auto;
-    background-color:#edc918;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: rgb(226, 227, 227);
+    margin: 40px auto;
+    max-width: 1150px;
+    padding: 50px 40px;
 }
-.pagina3_imagen .img{
+
+.pagina4_imagen > img:first-child {
+    max-width: 42%;
+    height: auto;
+    object-fit: contain;
+}
+
+.texto4 {
+    max-width: 45%;
+}
+
+.texto4 h3 {
+    color: #edc918;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.texto4 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.boton3 button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pagina4_imagen > img:last-child {
+    max-width: 35%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Quinta página */
+.pagina5_imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+    padding: 80px 20px;
+    gap: 30px;
+}
+
+.texto5 {
+    max-width: 750px;
+}
+
+.texto5 h4 {
+    color: #edc918;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.texto5 p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pagina5_imagen img {
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.boton4 button {
+    background-color: #edc918;
+    color: #000000;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Sexta página (Our Team) */
+.pagina6_imagen {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex: 1;
-    padding:  20px;
-    margin: 0 auto;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    max-width: 1150px;
+    padding: 50px 40px;
 }
-.pagina3_imagen img{
-    max-width: 50%;
+
+.pagina6_imagen img {
+    max-width: 48%;
+    height: auto;
+    object-fit: contain;
+}
+
+.texto6 {
+    max-width: 45%;
+}
+
+.texto6 h4 {
+    color: #000000;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.texto6 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.boton5 button {
+    background-color: #edc918;
+    color: #000000;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Séptima página (Try our method for free) */
+.pagina7_imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: rgb(226, 227, 227);
+    margin: 40px auto;
+    max-width: 1150px;
+    padding: 50px 40px;
+}
+
+.texto7 {
+    max-width: 45%;
+}
+
+.texto7 h4 {
+    color: #000000;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.texto7 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.boton6 button {
+    background-color: #edc918;
+    color: #000000;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pagina7_imagen img {
+    max-width: 48%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Octava página (Formulario y Newsletter) */
+.pagina8_imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    max-width: 1150px;
+    padding: 50px 40px;
+}
+
+.formulario {
+    background-color: #000000;
+    padding: 40px 30px;
+    max-width: 48%;
+    width: 100%;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caja form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.caja label {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.caja input, 
+.caja textarea {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.caja textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+.texto_formulario p {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.texto8 {
+    max-width: 45%;
+}
+
+.texto8 h4 {
+    color: #edc918;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.texto8 p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.boton7 button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Novena página (Mapa y Contacto) */
+.pagina9_mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #edc918;
+    padding: 70px 20px;
+    gap: 30px;
+}
+
+.texto9 {
+    max-width: 600px;
+}
+
+.texto9 h4 {
+    color: #000000;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto9 p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.pagina9_mapa img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.boton8 button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Franja negra de navegación inferior */
+.franja_negra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 50px 8%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.franja_negra img {
+    height: 75px;
+    object-fit: contain;
+}
+
+.lista_fin ul {
+    list-style: none;
+    columns: 2;
+    column-gap: 40px;
+}
+
+.lista_fin ul li {
+    margin-bottom: 12px;
+}
+
+.lista_fin ul li a {
+    color: #edc918;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.lista_fin ul li a:hover {
+    color: #ffffff;
+}
+
+/* Footer final (Copyright y Redes Sociales) */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 30px 8%;
+}
+
+footer p {
+    color: #edc918;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+}
+
+.redes a img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
 }
