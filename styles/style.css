@@ -554,3 +554,166 @@ footer p {
     width: 25px;
     object-fit: contain;
 }
+/*MEDIA QUERIES*/
+
+/*Celulares pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+    /* Menú superior en hilera */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /*secciones a 1 sola columna vertical */
+    .pagina1_imagen,
+    .pagina2_imagens,
+    .pagina3_imagen,
+    .pagina4_imagen,
+    .pagina6_imagen,
+    .pagina7_imagen,
+    .pagina8_imagen {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /*anchos al 100% para que no se salgan de pantalla */
+    .pagina1_imagen img,
+    .texto1,
+    .texto2,
+    .pagina2_imagens .imagenes,
+    .texto3,
+    .pagina3_imagen img,
+    .texto4,
+    .pagina6_imagen img,
+    .texto6,
+    .texto7,
+    .pagina7_imagen img,
+    .formulario,
+    .texto8 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Reducir el tamaño de títulos grandes */
+    .texto1 h1 {
+        font-size: 30px;
+    }
+
+    /* Franja negra y lista de enlaces inferior en hilera */
+    .franja_negra {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .lista_fin ul {
+        columns: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/*Celulares medianos / Tablets en vertical (481px a 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pagina1_imagen,
+    .pagina2_imagens,
+    .pagina3_imagen,
+    .pagina4_imagen,
+    .pagina6_imagen,
+    .pagina7_imagen,
+    .pagina8_imagen {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto6,
+    .texto7,
+    .texto8,
+    .formulario {
+        max-width: 100%;
+    }
+
+    .franja_negra {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista_fin ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/*Tablets en horizontal y Portátiles pequeños ( 769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pagina1_imagen,
+    .pagina2_imagens,
+    .pagina3_imagen,
+    .pagina4_imagen,
+    .pagina6_imagen,
+    .pagina7_imagen,
+    .pagina8_imagen {
+        padding: 40px 3%;
+    }
+
+    .texto1 h1 {
+        font-size: 45px;
+    }
+
+    .texto1,
+    .texto3,
+    .texto4,
+    .texto6,
+    .texto7,
+    .texto8,
+    .formulario {
+        max-width: 48%;
+    }
+}
+
+/*Pantallas de escritorio (más de 1024px) */
+@media screen and (min-width: 1025px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
